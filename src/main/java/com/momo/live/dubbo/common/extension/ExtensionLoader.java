@@ -67,7 +67,7 @@ public class ExtensionLoader<T> {
     
     private static final String SERVICES_DIRECTORY = "META-INF/services/";
 
-    private static final String DUBBO_DIRECTORY = "META-INF/dubbo/";
+    private static final String DUBBO_DIRECTORY = "META-INF/live/";
     
     private static final String DUBBO_INTERNAL_DIRECTORY = DUBBO_DIRECTORY + "internal/";
 
