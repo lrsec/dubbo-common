@@ -547,7 +547,7 @@ public class ExtensionLoader<T> {
         return instance;
     }
     
-	private Class<?> getExtensionClass(String name) {
+	public  Class<?> getExtensionClass(String name) {
 	    if (type == null)
 	        throw new IllegalArgumentException("Extension type == null");
 	    if (name == null)
@@ -558,7 +558,7 @@ public class ExtensionLoader<T> {
 	    return clazz;
 	}
 	
-	private Map<String, Class<?>> getExtensionClasses() {
+	public Map<String, Class<?>> getExtensionClasses() {
         Map<String, Class<?>> classes = cachedClasses.get();
         if (classes == null) {
             synchronized (cachedClasses) {
